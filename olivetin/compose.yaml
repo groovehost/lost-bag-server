@@ -2,7 +2,10 @@ services:
   olivetin:
     container_name: olivetin
     image: jamesread/olivetin
-    user: uid:gid
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ='America/New_York'
     volumes:
       - /etc/OliveTin:/config # replace host path or volume as needed
     ports:
