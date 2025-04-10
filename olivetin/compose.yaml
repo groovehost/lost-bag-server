@@ -2,8 +2,9 @@ services:
   olivetin:
     container_name: olivetin
     image: jamesread/olivetin
+    user: uid:gid
     volumes:
-      - /appdata/olivetin/config:/config # replace host path or volume as needed
+      - /etc/OliveTin:/config # replace host path or volume as needed
     ports:
       - "1337:1337"
     restart: unless-stopped
