@@ -1,4 +1,5 @@
 ---
 include:
 # - ./jellyfin/compose.yaml
-- ./olivetin/compose.yaml
+# - ./olivetin/compose.yaml
+- ./nginx-proxy-manager/compose.yaml
